@@ -9,7 +9,7 @@ class Solution:
             biggest_str = str2
             smallest_str = str1
 
-        for i in range(len(smallest_str) + 1, -1, -1):
+        for i in range(len(smallest_str), -1, -1):
             substr = smallest_str[:i]
 
             if not (biggest_str.replace(substr, '')) and not (smallest_str.replace(substr, '')):
